@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Challenge 1</title>
+</head>
+<body>
+<div id="goodbye">Cool text in here</div>
+<button id="cool" onclick="myFirstFunction()" onmouseover="mySecondFunction()">Click me to Remove the Text</button>
+<button id="epic" onclick="Appear()" onmouseover="mySecondFunction()">Click me to Show the Text</button>
+<script>
+  function myFirstFunction(){
+    document.getElementById("goodbye").innerHTML = "";
+  }
+  function Appear(){
+    document.getElementById("goodbye").innerHTML = "Cool text in here";
+  }
+</script>
+</body>
+</html>
