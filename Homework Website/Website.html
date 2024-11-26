@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Website</title>
+  <!--- My 5 effects are onkeydown, onkeyup, toString, Text Fade, Color Change  --->
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      transition: background-color 1s;
+    }
+    .fade-text {
+      opacity: 0;
+      transition: opacity 2s ease-in-out;
+    }
+  </style>
+</head>
+<body>
+<div id="Title">This is a list of the Best Video Games.</div>
+<button id="cool" onclick="myFirstFunction()">Click me to Change the Text</button>
+<input type="text" onkeydown="Keydown()" onkeyup="Keyup()">
+
+<input type="text" onkeydown="Keydown()" onkeyup="Keyup()">
+<script>
+  /*
+  Multi line Comment
+  */
+  // Single Line Comment
+  // alert("Hello World!!");
+
+  function Keydown(){
+    document.getElementById("Title").style.fontSize = "35px";
+  }
+  function Keyup(){
+    document.getElementById("Title").style.fontSize = "16px";
+  }
+  function d(){
+    document.getElementById()
+  }
+
+  var fortniteplayers = ["Clix", "Bugha", "Pigeon"];
+  fortniteplayers.toString()
+
+  const colors = ['#FF5347', '#31CD32', '#1E80FF', '#FFD700', '#8A2BE2'];
+  let colorIndex = 0;
+
+  function changeBackgroundColor() {
+    document.body.style.backgroundColor = colors[colorIndex];
+    colorIndex = (colorIndex + 1) % colors.length;
+  }
+
+  setInterval(changeBackgroundColor, 2000);
+
+  const fadeText = document.querySelector('.fade-text');
+
+  function fadeTextEffect() {
+    fadeText.style.opacity = fadeText.style.opacity == 0 ? 1 : 0;
+  }
+
+  setInterval(fadeTextEffect, 3000);
+</script>
+
+
+
+<table>
+  <tr>
+    <th>Best Games of the Year</th>
+    <th>Year of Publish</th>
+    <th>Rating</th>
+  </tr>
+  <tr>
+    <td>Fortnite</td>
+    <td>2017</td>
+    <td>5.0</td>
+  </tr>
+  <tr>
+    <td>Roblox</td>
+    <td>2006</td>
+    <td>4.9</td>
+  </tr>
+  <tr>
+    <td>R6</td>
+    <td>2015</td>
+    <td>4.8</td>
+  </tr>
+  <tr>
+    <td>Warpoop</td>
+    <td>2013</td>
+    <td>2.4</td>
+  </tr>
+</table>
+
+
+
+
+
+</body>
+</html>
