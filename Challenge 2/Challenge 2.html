@@ -11,7 +11,13 @@
 
 <script>
   function ChangebgColor(){
-    document.getElementById("demo").bgColor = "red";
+     var changebackground = document.getElementById("demo").bgColor = "red";
+
+    if(changebackground.style.display === "red"){
+      bgColor.style.display = "white";
+    }else{
+      bgColor.style.display = "red";
+    }
   }
 </script>
 <table id="demo">
