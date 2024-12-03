@@ -6,18 +6,18 @@
 </head>
 <body>
 <!-- Add a button that when you click it, the background of the table changes to blue -->
-<button id="sigma" onclick="ChangebgColor()">Click me to Change the Bg color of the Table</button>
+<button id="sigma" onclick="toggle()">Click me to Change the Bg color of the Table</button>
 
 
 <script>
-  function ChangebgColor(){
-     var changebackground = document.getElementById("demo").bgColor = "red";
-
-    if(changebackground.style.display === "red"){
-      bgColor.style.display = "white";
+  counter = 0;
+  function toggle(){
+    if (counter % 2 === 0) {
+      document.getElementById("demo").bgColor = "red";
     }else{
-      bgColor.style.display = "red";
+      document.getElementById("demo").bgColor = "white";
     }
+    counter++;
   }
 </script>
 <table id="demo">
